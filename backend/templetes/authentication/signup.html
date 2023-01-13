@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<body>
+    <h2>signup</h2>
+    <form action="/signup" method="post">
+        {% csrf_token %}
+        <label for="">Username</label>
+        <input type="text" id="username" name="username", placeholder="create username">  
+        <br>
+        <label for="">First name</label>
+        <input type="text" id="fname" name="fname", placeholder="Enter first name">  
+        <br>
+        <label for="">Last name</label>
+        <input type="text" id="lname" name="lname", placeholder="Enter last name">
+        <br>
+        <label for="">Email Address</label>
+        <input type="email" id="Email_id" name="Email_id", placeholder="Enter valid Email_id">
+        <br>
+        <label for="">password</label>
+        <input type="password" id="pass" name="pass1", placeholder="create password">
+        <br>
+        <label for="">confirm password</label>
+        <input type="password" id="confirm_pass1" name="confirm_pass1", placeholder="confirm password">
+        <br>
+        <button type="submit">create</button>
+    </form>
+</body>
+</html>
